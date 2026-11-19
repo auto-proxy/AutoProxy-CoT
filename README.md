@@ -40,7 +40,7 @@ AutoProxy-CoT/
 ## Installation & Setup
 
 ```bash
-git clone https://github.com/danwin-byte/AutoProxy-CoT.git
+git clone https://github.com/autoproxy/AutoProxy-CoT.git
 cd AutoProxy-CoT
 pip install -r requirements.txt
 pip install -e .
