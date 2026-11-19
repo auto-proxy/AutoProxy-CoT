@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "autoproxy-cot"
+version = "0.1.0"
+description = "Automated Proxy Synthesis and Evidence-Grounded Chain-of-Thought Tuning for Long-Context Reasoning in Compact Language Models"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "Bashik Rajan"},
+    {name = "Danwin Sajith", email = "danwinsajith@gmail.com"},
+    {name = "Adith Sajan"},
+]
+keywords = [
+    "long-context-reasoning",
+    "chain-of-thought",
+    "proxycot",
+    "multi-hop-qa",
+    "grounded-reasoning",
+    "nlp",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "pydantic>=2.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["autoproxy_cot*"]
